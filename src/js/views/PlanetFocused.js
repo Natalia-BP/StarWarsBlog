@@ -12,9 +12,9 @@ export const PlanetFocused = () => {
 
 	return (
 		<>
-			<div className="jumbotron bg-transparent">
-				<div className="row">
-					<div className="col-6">
+			<div className="planetFocused">
+				<div className="row justify-content-center justify-content-md-between">
+					<div className="col-md-5">
 						<iframe
 							src="https://giphy.com/embed/1rQm9dN6pVj4EyhM1c"
 							width="480"
@@ -27,13 +27,13 @@ export const PlanetFocused = () => {
 							<a href="https://giphy.com/gifs/starwars-star-wars-episode-7-1rQm9dN6pVj4EyhM1c" />
 						</p>
 					</div>
-					<div className="col-6 text-center">
-						<h1 className="display-4">{store.planetsInfo[params.theid].name}</h1>
+					<div className="col-md-6">
+						<h1>{store.planetsInfo[params.theid].name}</h1>
 						<p>A planet far far away...</p>
 					</div>
 				</div>
-				<hr className="my-4 bg-warning" />
-				<div className="col-sm-1 col-md-12 d-md-flex justify-content-between">
+				<hr className="my-5 bg-warning" />
+				<div className="col-md-12 d-md-flex justify-content-between">
 					<div className="text-center">
 						<h2>Name</h2>
 						<p>{store.planetsInfo[params.theid].name}</p>

@@ -1,6 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+// General
+
 body {
     background-image: url("../../src/img/star_background.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     overflow-x: hidden;
 }
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Russo One', sans-serif;
+}
+
+h1, h2 {
+    color: rgba(255, 255, 255, 0.884);
+}
+
+// Navbar
+
+
+// Characters Focused Comp
+.charactersFocused p {
+    color: rgba(255, 255, 255, 0.884);
+    
+}
+
+// Planet Focused Comp
+.planetFocused p {
+    color: rgba(255, 255, 255, 0.884);
+}
+
+
+

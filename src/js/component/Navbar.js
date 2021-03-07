@@ -16,10 +16,10 @@ export const Navbar = () => {
 				</Link>
 			</div>
 
-			<nav className="navbar mb-2">
-				<div className="dropdown dropleft">
+			<nav className="navbar my-2">
+				<div className="ml-auto dropdown dropleft">
 					<button
-						className="btn dropdown-toggle text-white"
+						className="navBtn mr-3 btn btn-warning dropdown-toggle"
 						type="button"
 						id="dropdownMenuButton"
 						data-toggle="dropdown"
@@ -30,7 +30,7 @@ export const Navbar = () => {
 					<div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
 						{store.favorites.map((item, index) => {
 							return (
-								<Link key={index} className="dropdown-item" to="/">
+								<Link key={index} className="dropdown-item justify-content-between" to="/">
 									{item.name}{" "}
 									<button
 										className="btn"

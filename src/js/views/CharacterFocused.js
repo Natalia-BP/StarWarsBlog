@@ -11,9 +11,9 @@ export const CharacterFocused = () => {
 	const params = useParams();
 	return (
 		<>
-			<div className="jumbotron bg-transparent">
-				<div className="flex-column flex-md-row">
-					<div className="col-md-6">
+			<div className="charactersFocused">
+				<div className="row justify-content-center justify-content-md-between">
+					<div className="col-md-5">
 						<iframe
 							src="https://giphy.com/embed/3owzVYjZSzuFivWpHi"
 							width="480"
@@ -27,12 +27,12 @@ export const CharacterFocused = () => {
 						</p>
 					</div>
 					<div className="col-md-6">
-						<h1 className="display-4 text-sm-center text-md-left">{store.infoChars[params.theid].name}</h1>
+						<h1>{store.infoChars[params.theid].name}</h1>
 						<p>A person within the Star Wars universe</p>
 					</div>
 				</div>
-				<hr className="my-4 bg-warning" />
-				<div className="col-sm-1 col-md-12 d-md-flex justify-content-between">
+				<hr className="my-5 bg-warning" />
+				<div className="col-md-12 d-md-flex justify-content-between">
 					<div className="text-center">
 						<h2>Name</h2>
 						<p>{store.infoChars[params.theid].name}</p>

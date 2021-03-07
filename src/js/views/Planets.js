@@ -18,9 +18,12 @@ export const Planets = () => {
 					<div className="card h-100">
 						<img src={planetsImg} className="card-img-top" alt="vista el terreno de un planeta" />
 						<div className="card-body">
-							<h5 className="card-title">{item.name}</h5>
-							<h6>Population: {item.population}</h6>
-							<h6>Terrain: {item.terrain}</h6>
+							<h4 className="card-title">{item.name}</h4>
+							<h6 className="d-inline">Population: </h6>
+							<p className="d-inline">{item.population}</p>
+							<br />
+							<h6 className="d-inline">Terrain: </h6>
+							<p className="d-inline">{item.terrain}</p>
 						</div>
 						<div className="card-footer text-right">
 							<Link to={"/PlanetFocused/" + index}>
